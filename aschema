@@ -1,0 +1,7 @@
+ [
+    {
+      "name": "afield",
+      "type": "STRING",
+      "mode": "nullable"
+    }
+    ]

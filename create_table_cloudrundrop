@@ -1,0 +1,9 @@
+bq mkdef  --source_format=NEWLINE_DELIMITED_JSON \
+--noautodetect \
+--hive_partitioning_mode=CUSTOM \
+--hive_partitioning_source_uri_prefix=gs://thechampishere/cloudruntestdrop/{dt:STRING} \
+"gs://thechampishere/cloudruntestdrop/sampledata/*" aschema > create_table_cloudrun_schema
+bq mk \
+--table \
+--external_table_definition=create_table_cloudrun_schema \
+subtle-champion-349012:here1.cloudruntestdrop  

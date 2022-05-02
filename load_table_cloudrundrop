@@ -1,0 +1,8 @@
+#gsutil cp sampledata_cloudrundrop.json gs://thechampishere/cloudruntestdrop/dt=2022050200
+bq load \
+--source_format=NEWLINE_DELIMITED_JSON \
+--hive_partitioning_mode=CUSTOM \
+--hive_partitioning_source_uri_prefix="gs://thechampishere/cloudruntestdrop/{dt:STRING}" \
+subtle-champion-349012:here1.cloudruntestdrop "gs://thechampishere/cloudruntestdrop/dt=2022050200/" aschema
+#thechampishere/cloudruntestdrop/dt=2022050200
+
