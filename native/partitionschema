@@ -1,0 +1,17 @@
+ [
+    {
+      "name": "afield",
+      "type": "STRING",
+      "mode": "nullable"
+    },
+    {
+      "name": "timeInMillis",
+      "type": "INTEGER",
+      "mode": "nullable"
+    },
+    { 
+      "name": "partitionTime",
+      "type": "TIMESTAMP",
+      "mode": "nullable"
+    }  
+]

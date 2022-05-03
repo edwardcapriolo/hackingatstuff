@@ -1,0 +1,13 @@
+ [
+    {
+      "name": "afield",
+      "type": "STRING",
+      "mode": "nullable"
+    },
+    {
+      "name": "timeInMillis",
+      "type": "INTEGER",
+      "mode": "nullable"
+    }
+   
+]
