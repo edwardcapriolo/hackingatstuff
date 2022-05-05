@@ -1,0 +1,19 @@
+{
+  "hivePartitioningOptions": {
+    "mode": "CUSTOM",
+    "sourceUriPrefix": "gs://thechampishere/cloudruntestdrop/{dt:STRING}"
+  },
+  "schema": {
+    "fields": [
+      {
+        "mode": "nullable",
+        "name": "afield",
+        "type": "STRING"
+      }
+    ]
+  },
+  "sourceFormat": "NEWLINE_DELIMITED_JSON",
+  "sourceUris": [
+    "gs://thechampishere/cloudruntestdrop/*"
+  ]
+}
